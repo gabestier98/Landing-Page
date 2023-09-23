@@ -1,0 +1,30 @@
+/* SETUP */
+* { /* www.paulirish.com/2012/box-sizing-border-box-ftw/ */
+    box-sizing: border-box;
+}
+
+header, footer, main {
+    border: 4px solid red;
+}
+
+section {
+    border: 4px solid lime;
+}
+
+
+/* STRUCTURE */
+/* phillip walton sticky footer */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex-grow: 1;
+}
+
+inner-column {
+    display: block;
+    border: 4px solid orange;
+    padding: 10px;
+}
