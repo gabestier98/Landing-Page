@@ -1,14 +1,27 @@
+
+
 /* SETUP */
 * { /* www.paulirish.com/2012/box-sizing-border-box-ftw/ */
     box-sizing: border-box;
 }
 
-header, footer, main {
-    border: 4px solid red;
+picture {
+    display: block;
+}
+img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
-section {
-    border: 4px solid lime;
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+p a, li a {
+    color: blue;
+    text-decoration: underline;
 }
 
 
@@ -27,4 +40,65 @@ inner-column {
     display: block;
     border: 4px solid orange;
     padding: 10px;
+}
+
+
+/* TYPOGRAPHY */
+.loud-voice {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.1.
+}
+
+
+
+
+
+
+
+
+
+/* COMPONENTS */
+
+
+
+
+
+/* MODULES */
+graphic {
+    display: block;
+}
+
+graphic text-content {
+    display: block;
+}
+
+graphic picture {
+    
+}
+
+@media (min-width: 700px) {
+    graphic {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 20px;
+    }
+    graphic :is(text-content, picture) {
+        flex-basis: 50%;
+        border: 1px solid blue;
+    }
+}
+
+
+
+
+
+
+
+header, footer, main {
+    border: 4px solid red;
+}
+
+section {
+    border: 4px solid lime;
 }
